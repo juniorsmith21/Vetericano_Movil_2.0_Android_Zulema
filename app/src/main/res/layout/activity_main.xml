@@ -51,7 +51,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:backgroundTint="#117371"
+        android:backgroundTint="#0D689A"
         android:text="ADMINISTRADOR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -61,36 +61,39 @@
         android:id="@+id/btnJuridico"
         android:layout_width="0dp"
         android:layout_height="55dp"
-        android:text="JURÍDICO"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        app:layout_constraintTop_toBottomOf="@id/btnAdministrador"
+        android:backgroundTint="#0D6799"
+        android:text="JURÍDICO"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/btnAdministrador" />
 
     <Button
         android:id="@+id/btnUsuario"
         android:layout_width="0dp"
         android:layout_height="55dp"
-        android:text="USUARIO"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        app:layout_constraintTop_toBottomOf="@id/btnJuridico"
+        android:backgroundTint="#0D6698"
+        android:text="USUARIO"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/btnJuridico" />
 
     <Button
         android:id="@+id/btnVeterinario"
         android:layout_width="0dp"
         android:layout_height="55dp"
-        android:text="VETERINARIO"
-        android:layout_marginTop="16dp"
         android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        app:layout_constraintTop_toBottomOf="@id/btnUsuario"
+        android:backgroundTint="#0D6597"
+        android:text="VETERINARIO"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/btnUsuario" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

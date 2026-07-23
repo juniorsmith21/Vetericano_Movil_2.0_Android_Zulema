@@ -21,8 +21,9 @@ class RegisterUsuario : AppCompatActivity() {
         binding = ActivityRegisterUsuarioBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.btnRegistro.setOnClickListener {
-
+        binding.btnRlogin.setOnClickListener {
+            val intent= Intent(this, LoginUsuario::class.java)
+            startActivity(intent)
 
         }
 
