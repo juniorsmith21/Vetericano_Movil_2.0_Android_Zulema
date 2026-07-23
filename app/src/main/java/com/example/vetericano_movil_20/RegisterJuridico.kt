@@ -21,10 +21,15 @@ class RegisterJuridico : AppCompatActivity() {
         binding.btnRegis.setOnClickListener {
 
             if (binding.NombreEmpresa.text.toString().trim().isEmpty() ||
+
                 binding.Nit.text.toString().trim().isEmpty() ||
+
                 binding.Correo.text.toString().trim().isEmpty() ||
+
                 binding.Telefono.text.toString().trim().isEmpty() ||
+
                 binding.Password.text.toString().trim().isEmpty()
+
             ) {
 
                 Toast.makeText(this, "Complete todos los campos", Toast.LENGTH_SHORT).show()
