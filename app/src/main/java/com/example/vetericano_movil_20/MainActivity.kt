@@ -25,6 +25,9 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Super administrador", Toast.LENGTH_SHORT).show()
 
         }
-
+binding.btnUsuario.setOnClickListener {
+    val intent = Intent(this, RegisterUsuario::class.java)
+    startActivity(intent)
+}
         }
     }
