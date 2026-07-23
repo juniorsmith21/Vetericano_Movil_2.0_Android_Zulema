@@ -101,4 +101,5 @@
         android:text="Registrarse"
         tools:layout_editor_absoluteX="152dp"
         tools:layout_editor_absoluteY="594dp" />
+ 
 </androidx.constraintlayout.widget.ConstraintLayout>

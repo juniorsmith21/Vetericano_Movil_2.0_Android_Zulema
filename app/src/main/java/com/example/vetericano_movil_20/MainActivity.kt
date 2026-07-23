@@ -31,6 +31,10 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+binding.btnUsuario.setOnClickListener {
+    val intent = Intent(this, RegisterUsuario::class.java)
+    startActivity(intent)
+}
 
         }
     }
