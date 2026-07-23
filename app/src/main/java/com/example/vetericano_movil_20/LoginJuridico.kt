@@ -1,20 +1,29 @@
 package com.example.vetericano_movil_20
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.vetericano_movil_20.databinding.ActivityLoginJuridicoBinding
 
 class LoginJuridico : AppCompatActivity() {
+
+    private lateinit var binding: ActivityLoginJuridicoBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_login_juridico)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        binding = ActivityLoginJuridicoBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        binding.sesion.setOnClickListener {
+
+            val correo = binding.correo.text.toString().trim()
+            val contra = binding.contra.text.toString().trim()
+
+            if (correo.isEmpty() || contra.isEmpty()) {
+                Toast.makeText(this, "Complete todos los campos", Toast.LENGTH_SHORT).show()
+            } else {
+                Toast.makeText(this, "Usuario logeado", Toast.LENGTH_SHORT).show()
+            }
         }
     }
 }
