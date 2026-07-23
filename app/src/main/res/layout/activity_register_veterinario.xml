@@ -187,7 +187,7 @@
         </androidx.cardview.widget.CardView>
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnRegister"
             android:layout_width="141dp"
             android:layout_height="48dp"
             android:layout_marginTop="8dp"
@@ -205,10 +205,10 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button" />
+            app:layout_constraintTop_toBottomOf="@+id/btnRegister" />
 
         <Button
-            android:id="@+id/Loginofregister"
+            android:id="@+id/btnLoginofregister"
             android:layout_width="141dp"
             android:layout_height="48dp"
             android:layout_marginTop="4dp"
