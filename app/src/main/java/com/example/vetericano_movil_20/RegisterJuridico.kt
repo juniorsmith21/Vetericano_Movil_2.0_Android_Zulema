@@ -1,4 +1,4 @@
-package com.example.vetericano_movil_20
+package com.example.vetericano_movil_206
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
