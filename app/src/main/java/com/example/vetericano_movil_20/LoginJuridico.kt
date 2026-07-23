@@ -1,5 +1,6 @@
 package com.example.vetericano_movil_20
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -24,6 +25,11 @@ class LoginJuridico : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Usuario logeado", Toast.LENGTH_SHORT).show()
             }
+
+        }
+        binding.loginn.setOnClickListener {
+            val intent = Intent(this, RegisterJuridico::class.java)
+            startActivity(intent)
         }
     }
 }
