@@ -36,9 +36,11 @@ binding.btnUsuario.setOnClickListener {
     startActivity(intent)
 }
 
+binding.btnJuridico.setOnClickListener {
+    val intent = Intent(this, LoginJuridico::class.java)
+    startActivity(intent)
 
-        intent = Intent(this, LoginJuridico::class.java)
-        startActivity(intent)
+}
 
 
 
