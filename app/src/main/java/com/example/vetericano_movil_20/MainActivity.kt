@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnAdministrador.setOnClickListener {
-            val intent = Intent(this, ActivityRegisterAdminstradorBinding::class.java)
+            val intent = Intent(this, RegisterAdminstrador::class.java)
             startActivity(intent)
         }
 
