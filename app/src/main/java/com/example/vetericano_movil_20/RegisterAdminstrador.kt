@@ -19,12 +19,10 @@ class RegisterAdminstrador : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnRegistrar.setOnClickListener {
-            val intent = Intent(this, RegisterAdminstrador::class.java)
-            startActivity(intent)
             Toast.makeText(this, "cuenta registrada", Toast.LENGTH_SHORT).show()
         }
         binding.btnRegresar.setOnClickListener {
-            val intent = Intent(this, ActivityMainBinding::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }
